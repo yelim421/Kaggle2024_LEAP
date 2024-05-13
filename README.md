@@ -4,4 +4,4 @@ Participated in Kaggle competition [LEAP](https://www.kaggle.com/competitions/le
 
 Second small project in 2024.
 
-members : @HDC @Ji-Ho Ko @Juwon-moon @limkim
+members : @DC-Hong @Ji-Ho Ko @Juwon-moon @limkim
