@@ -1,0 +1,9 @@
+==========================================
+SLURM_JOB_ID = 311436
+SLURM_NODELIST = gpu25
+==========================================
+Time after processing data: 0:01:21
+Using device: cpu
+Loaded existing model from best_model.pth
+Total time after loading model: 0:01:21
+Total time after prediction: 0:07:02
