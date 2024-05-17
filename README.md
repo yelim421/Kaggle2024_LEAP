@@ -24,7 +24,7 @@ conda activate leap
 
 for KISTI.NEURON users:     
 	run `sbatch submit.sh` to submit the batch job    
-	run `squeue -u `#username#` to moniter the job    
+	run `squeue -u #username#` to moniter the job    
 	more details for job script file [check here](https://docs-ksc.gitbook.io/neuron-user-guide/undefined/running-jobs-through-scheduler-slurm#id-6)   
 	
 BEFORE RUN:    
