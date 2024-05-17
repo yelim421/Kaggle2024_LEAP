@@ -4,7 +4,7 @@ Participated in Kaggle competition [LEAP](https://www.kaggle.com/competitions/le
 
 Second small project in 2024.
 
-members : @DC-Hong @Ji-Ho Ko @Juwon-moon @limkim
+members : @[DC-Hong](https://github.com/DC-Hong) @[Ji-Ho Ko](https://github.com/Ruv-ko) @[Juwon-moon](https://github.com/Juwon-Moon) @[yelim421](https://github.com/yelim421)
 
 project/  
 ├── data_processing.py    
@@ -28,4 +28,4 @@ for KISTI.NEURON users:
 	more details for job script file [check here](https://docs-ksc.gitbook.io/neuron-user-guide/undefined/running-jobs-through-scheduler-slurm#id-6)   
 	
 BEFORE RUN:    
-- please check data_path
+- please check **data_path**
