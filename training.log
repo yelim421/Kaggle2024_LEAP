@@ -1,1 +1,19 @@
 2024-05-26 20:05:38,562 - Hyperparameters : {'DATA_PATH': '/scratch/x2817a02/workspace/kaggle/ClimSim/data/', 'BATCH_SIZE': 1024, 'MIN_STD': '1e-8', 'SCHEDULER_PATIENCE': 3, 'SCHEDULER_FACTOR': 0.316, 'EPOCHS': 2, 'PATIENCE': 1, 'PRINT_FREQ': 100, 'BEST_MODEL_PATH': 'best_model.pth', 'LEARNING_RATE': 0.001, 'WEIGHT_DECAY': 0.01}
+2024-05-26 20:28:11,972 - Hyperparameters :
+2024-05-26 20:28:11,989 - DATA_PATH: /scratch/x2817a02/workspace/kaggle/ClimSim/data/
+2024-05-26 20:28:11,989 - BATCH_SIZE: 1024
+2024-05-26 20:28:11,989 - MIN_STD: 1e-8
+2024-05-26 20:28:11,989 - SCHEDULER_PATIENCE: 3
+2024-05-26 20:28:11,989 - SCHEDULER_FACTOR: 0.316
+2024-05-26 20:28:11,989 - EPOCHS: 2
+2024-05-26 20:28:11,990 - PATIENCE: 1
+2024-05-26 20:28:11,990 - PRINT_FREQ: 100
+2024-05-26 20:28:11,990 - BEST_MODEL_PATH: best_model.pth
+2024-05-26 20:28:11,990 - LEARNING_RATE: 0.001
+2024-05-26 20:28:11,990 - WEIGHT_DECAY: 0.01
+2024-05-26 20:31:03,558 - 
+Epoch: 1  Val Loss: 0.5009  R2 score: -25.5122
+2024-05-26 20:31:03,558 - Validation loss decreased, saving new best model and resetting patience counter.
+2024-05-26 20:33:31,631 - 
+Epoch: 2  Val Loss: 0.4741  R2 score: -5.2721
+2024-05-26 20:33:31,632 - Validation loss decreased, saving new best model and resetting patience counter.

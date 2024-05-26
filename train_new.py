@@ -17,9 +17,15 @@ def setup_logging(log_file):
         logging.StreamHandler()
     ])
 
+def log_hyperparameters(config):
+    for key, value in config.items():
+        logging.info(f"{key}: {value}")
+
+
 def train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, num_outputs, start_time, config):
     setup_logging('training.log')
-    logging.info(f"Hyperparameters : {config}")
+    logging.info(f"Hyperparameters :")
+    log_hyperparameters(config)
 
     best_val_loss = float('inf')
     best_model_state = None
@@ -43,11 +49,11 @@ def train_model(model, train_loader, val_loader, criterion, optimizer, scheduler
             if (batch_idx + 1) % config['PRINT_FREQ'] == 0:
                 current_lr = optimizer.param_groups[0]["lr"]
                 elapsed_time = format_time(time.time() - start_time)
-                print(f'  Epoch: {epoch+1}',\
+                logging.info(f'  Epoch: {epoch+1}',\
                       f'  Batch: {batch_idx + 1}/{len(train_loader)}',\
                       f'  Train Loss: {total_loss / steps:.4f}',\
                       f'  LR: {current_lr:.1e}',\
-                      f'  Time: {elapsed_time}', flush=True)
+                      f'  Time: {elapsed_time}')
                 total_loss = 0
                 steps = 0
 
@@ -65,7 +71,7 @@ def train_model(model, train_loader, val_loader, criterion, optimizer, scheduler
 
         r2 = r2score(all_outputs, y_true)
         avg_val_loss = val_loss / len(val_loader)
-        print(f'\nEpoch: {epoch+1}  Val Loss: {avg_val_loss:.4f}  R2 score: {r2:.4f}')
+        logging.info(f'\nEpoch: {epoch+1}  Val Loss: {avg_val_loss:.4f}  R2 score: {r2:.4f}')
         
         scheduler.step(avg_val_loss)
 
@@ -73,13 +79,13 @@ def train_model(model, train_loader, val_loader, criterion, optimizer, scheduler
             best_val_loss = avg_val_loss
             best_model_state = model.state_dict()
             patience_count = 0
-            print("Validation loss decreased, saving new best model and resetting patience counter.")
+            logging.info("Validation loss decreased, saving new best model and resetting patience counter.")
         else:
             patience_count += 1
-            print(f"No improvement in validation loss for {patience_count} epochs.")
+            logging.info(f"No improvement in validation loss for {patience_count} epochs.")
             
         if patience_count >= config['PATIENCE']:
-            print("Stopping early due to no improvement in validation loss.")
+            logging.info("Stopping early due to no improvement in validation loss.")
             break
 
     return best_model_state

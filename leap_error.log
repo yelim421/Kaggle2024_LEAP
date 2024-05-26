@@ -10,4 +10,1869 @@ Also make sure that all modulefiles written in TCL start with the string
 
 
 
-2024-05-26 20:05:38,562 - Hyperparameters : {'DATA_PATH': '/scratch/x2817a02/workspace/kaggle/ClimSim/data/', 'BATCH_SIZE': 1024, 'MIN_STD': '1e-8', 'SCHEDULER_PATIENCE': 3, 'SCHEDULER_FACTOR': 0.316, 'EPOCHS': 2, 'PATIENCE': 1, 'PRINT_FREQ': 100, 'BEST_MODEL_PATH': 'best_model.pth', 'LEARNING_RATE': 0.001, 'WEIGHT_DECAY': 0.01}
+2024-05-26 20:28:11,972 - Hyperparameters :
+2024-05-26 20:28:11,989 - DATA_PATH: /scratch/x2817a02/workspace/kaggle/ClimSim/data/
+2024-05-26 20:28:11,989 - BATCH_SIZE: 1024
+2024-05-26 20:28:11,989 - MIN_STD: 1e-8
+2024-05-26 20:28:11,989 - SCHEDULER_PATIENCE: 3
+2024-05-26 20:28:11,989 - SCHEDULER_FACTOR: 0.316
+2024-05-26 20:28:11,989 - EPOCHS: 2
+2024-05-26 20:28:11,990 - PATIENCE: 1
+2024-05-26 20:28:11,990 - PRINT_FREQ: 100
+2024-05-26 20:28:11,990 - BEST_MODEL_PATH: best_model.pth
+2024-05-26 20:28:11,990 - LEARNING_RATE: 0.001
+2024-05-26 20:28:11,990 - WEIGHT_DECAY: 0.01
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 100/2198', '  Train Loss: 0.8012', '  LR: 1.0e-03', '  Time: 0:01:30')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 100/2198', '  Train Loss: 0.8012', '  LR: 1.0e-03', '  Time: 0:01:30')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 200/2198', '  Train Loss: 0.6294', '  LR: 1.0e-03', '  Time: 0:01:36')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 200/2198', '  Train Loss: 0.6294', '  LR: 1.0e-03', '  Time: 0:01:36')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 300/2198', '  Train Loss: 0.5755', '  LR: 1.0e-03', '  Time: 0:01:45')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 300/2198', '  Train Loss: 0.5755', '  LR: 1.0e-03', '  Time: 0:01:45')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 400/2198', '  Train Loss: 0.5495', '  LR: 1.0e-03', '  Time: 0:01:52')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 400/2198', '  Train Loss: 0.5495', '  LR: 1.0e-03', '  Time: 0:01:52')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 500/2198', '  Train Loss: 0.5283', '  LR: 1.0e-03', '  Time: 0:01:59')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 500/2198', '  Train Loss: 0.5283', '  LR: 1.0e-03', '  Time: 0:01:59')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 600/2198', '  Train Loss: 0.5181', '  LR: 1.0e-03', '  Time: 0:02:07')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 600/2198', '  Train Loss: 0.5181', '  LR: 1.0e-03', '  Time: 0:02:07')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 700/2198', '  Train Loss: 0.5079', '  LR: 1.0e-03', '  Time: 0:02:16')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 700/2198', '  Train Loss: 0.5079', '  LR: 1.0e-03', '  Time: 0:02:16')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 800/2198', '  Train Loss: 0.5165', '  LR: 1.0e-03', '  Time: 0:02:22')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 800/2198', '  Train Loss: 0.5165', '  LR: 1.0e-03', '  Time: 0:02:22')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 900/2198', '  Train Loss: 0.5775', '  LR: 1.0e-03', '  Time: 0:02:30')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 900/2198', '  Train Loss: 0.5775', '  LR: 1.0e-03', '  Time: 0:02:30')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 1000/2198', '  Train Loss: 0.5564', '  LR: 1.0e-03', '  Time: 0:02:38')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 1000/2198', '  Train Loss: 0.5564', '  LR: 1.0e-03', '  Time: 0:02:38')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 1100/2198', '  Train Loss: 0.4972', '  LR: 1.0e-03', '  Time: 0:02:45')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 1100/2198', '  Train Loss: 0.4972', '  LR: 1.0e-03', '  Time: 0:02:45')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 1200/2198', '  Train Loss: 0.4905', '  LR: 1.0e-03', '  Time: 0:02:52')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 1200/2198', '  Train Loss: 0.4905', '  LR: 1.0e-03', '  Time: 0:02:52')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 1300/2198', '  Train Loss: 0.5258', '  LR: 1.0e-03', '  Time: 0:03:00')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 1300/2198', '  Train Loss: 0.5258', '  LR: 1.0e-03', '  Time: 0:03:00')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 1400/2198', '  Train Loss: 0.4882', '  LR: 1.0e-03', '  Time: 0:03:08')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 1400/2198', '  Train Loss: 0.4882', '  LR: 1.0e-03', '  Time: 0:03:08')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 1500/2198', '  Train Loss: 0.4792', '  LR: 1.0e-03', '  Time: 0:03:15')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 1500/2198', '  Train Loss: 0.4792', '  LR: 1.0e-03', '  Time: 0:03:15')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 1600/2198', '  Train Loss: 0.4713', '  LR: 1.0e-03', '  Time: 0:03:22')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 1600/2198', '  Train Loss: 0.4713', '  LR: 1.0e-03', '  Time: 0:03:22')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 1700/2198', '  Train Loss: 0.4771', '  LR: 1.0e-03', '  Time: 0:03:28')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 1700/2198', '  Train Loss: 0.4771', '  LR: 1.0e-03', '  Time: 0:03:28')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 1800/2198', '  Train Loss: 0.4981', '  LR: 1.0e-03', '  Time: 0:03:35')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 1800/2198', '  Train Loss: 0.4981', '  LR: 1.0e-03', '  Time: 0:03:35')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 1900/2198', '  Train Loss: 0.4710', '  LR: 1.0e-03', '  Time: 0:03:41')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 1900/2198', '  Train Loss: 0.4710', '  LR: 1.0e-03', '  Time: 0:03:41')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 2000/2198', '  Train Loss: 0.4906', '  LR: 1.0e-03', '  Time: 0:03:48')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 2000/2198', '  Train Loss: 0.4906', '  LR: 1.0e-03', '  Time: 0:03:48')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 2100/2198', '  Train Loss: 0.4683', '  LR: 1.0e-03', '  Time: 0:03:55')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 1'
+Arguments: ('  Batch: 2100/2198', '  Train Loss: 0.4683', '  LR: 1.0e-03', '  Time: 0:03:55')
+2024-05-26 20:31:03,558 - 
+Epoch: 1  Val Loss: 0.5009  R2 score: -25.5122
+2024-05-26 20:31:03,558 - Validation loss decreased, saving new best model and resetting patience counter.
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 100/2198', '  Train Loss: 0.4550', '  LR: 1.0e-03', '  Time: 0:04:22')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 100/2198', '  Train Loss: 0.4550', '  LR: 1.0e-03', '  Time: 0:04:22')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 200/2198', '  Train Loss: 0.4629', '  LR: 1.0e-03', '  Time: 0:04:28')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 200/2198', '  Train Loss: 0.4629', '  LR: 1.0e-03', '  Time: 0:04:28')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 300/2198', '  Train Loss: 0.4776', '  LR: 1.0e-03', '  Time: 0:04:34')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 300/2198', '  Train Loss: 0.4776', '  LR: 1.0e-03', '  Time: 0:04:34')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 400/2198', '  Train Loss: 0.4498', '  LR: 1.0e-03', '  Time: 0:04:40')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 400/2198', '  Train Loss: 0.4498', '  LR: 1.0e-03', '  Time: 0:04:40')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 500/2198', '  Train Loss: 0.4825', '  LR: 1.0e-03', '  Time: 0:04:47')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 500/2198', '  Train Loss: 0.4825', '  LR: 1.0e-03', '  Time: 0:04:47')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 600/2198', '  Train Loss: 0.5152', '  LR: 1.0e-03', '  Time: 0:04:53')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 600/2198', '  Train Loss: 0.5152', '  LR: 1.0e-03', '  Time: 0:04:53')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 700/2198', '  Train Loss: 0.4872', '  LR: 1.0e-03', '  Time: 0:04:59')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 700/2198', '  Train Loss: 0.4872', '  LR: 1.0e-03', '  Time: 0:04:59')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 800/2198', '  Train Loss: 0.5334', '  LR: 1.0e-03', '  Time: 0:05:05')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 800/2198', '  Train Loss: 0.5334', '  LR: 1.0e-03', '  Time: 0:05:05')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 900/2198', '  Train Loss: 0.4737', '  LR: 1.0e-03', '  Time: 0:05:11')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 900/2198', '  Train Loss: 0.4737', '  LR: 1.0e-03', '  Time: 0:05:11')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 1000/2198', '  Train Loss: 0.4500', '  LR: 1.0e-03', '  Time: 0:05:18')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 1000/2198', '  Train Loss: 0.4500', '  LR: 1.0e-03', '  Time: 0:05:18')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 1100/2198', '  Train Loss: 0.4533', '  LR: 1.0e-03', '  Time: 0:05:24')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 1100/2198', '  Train Loss: 0.4533', '  LR: 1.0e-03', '  Time: 0:05:24')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 1200/2198', '  Train Loss: 0.4916', '  LR: 1.0e-03', '  Time: 0:05:30')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 1200/2198', '  Train Loss: 0.4916', '  LR: 1.0e-03', '  Time: 0:05:30')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 1300/2198', '  Train Loss: 0.4533', '  LR: 1.0e-03', '  Time: 0:05:36')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 1300/2198', '  Train Loss: 0.4533', '  LR: 1.0e-03', '  Time: 0:05:36')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 1400/2198', '  Train Loss: 0.4430', '  LR: 1.0e-03', '  Time: 0:05:42')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 1400/2198', '  Train Loss: 0.4430', '  LR: 1.0e-03', '  Time: 0:05:42')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 1500/2198', '  Train Loss: 0.4554', '  LR: 1.0e-03', '  Time: 0:05:48')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 1500/2198', '  Train Loss: 0.4554', '  LR: 1.0e-03', '  Time: 0:05:48')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 1600/2198', '  Train Loss: 0.4389', '  LR: 1.0e-03', '  Time: 0:05:54')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 1600/2198', '  Train Loss: 0.4389', '  LR: 1.0e-03', '  Time: 0:05:54')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 1700/2198', '  Train Loss: 0.4437', '  LR: 1.0e-03', '  Time: 0:06:00')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 1700/2198', '  Train Loss: 0.4437', '  LR: 1.0e-03', '  Time: 0:06:00')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 1800/2198', '  Train Loss: 0.4346', '  LR: 1.0e-03', '  Time: 0:06:06')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 1800/2198', '  Train Loss: 0.4346', '  LR: 1.0e-03', '  Time: 0:06:06')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 1900/2198', '  Train Loss: 0.4442', '  LR: 1.0e-03', '  Time: 0:06:12')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 1900/2198', '  Train Loss: 0.4442', '  LR: 1.0e-03', '  Time: 0:06:12')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 2000/2198', '  Train Loss: 0.4806', '  LR: 1.0e-03', '  Time: 0:06:19')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 2000/2198', '  Train Loss: 0.4806', '  LR: 1.0e-03', '  Time: 0:06:19')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 2100/2198', '  Train Loss: 0.4332', '  LR: 1.0e-03', '  Time: 0:06:26')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 1160, in emit
+    msg = self.format(record)
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 999, in format
+    return fmt.format(record)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 703, in format
+    record.message = record.getMessage()
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/home01/x2817a03/.conda/envs/leap/lib/python3.12/logging/__init__.py", line 392, in getMessage
+    msg = msg % self.args
+          ~~~~^~~~~~~~~~~
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/scratch/x2817a03/Kaggle2024_LEAP/main.py", line 54, in <module>
+    best_model_state = train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, len(TARGET_COLS), ts, config)
+  File "/scratch/x2817a03/Kaggle2024_LEAP/train_new.py", line 52, in train_model
+    logging.info(f'  Epoch: {epoch+1}',\
+Message: '  Epoch: 2'
+Arguments: ('  Batch: 2100/2198', '  Train Loss: 0.4332', '  LR: 1.0e-03', '  Time: 0:06:26')
+2024-05-26 20:33:31,631 - 
+Epoch: 2  Val Loss: 0.4741  R2 score: -5.2721
+2024-05-26 20:33:31,632 - Validation loss decreased, saving new best model and resetting patience counter.
