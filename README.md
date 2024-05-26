@@ -29,3 +29,6 @@ for KISTI.NEURON users:
 	
 BEFORE RUN:    
 - please check **data_path**
+
+SUBMIT:
+`kaggle competitions submit -c leap-atmospheric-physics-ai-climsim -f submission.csv -m "Message"`
