@@ -14,7 +14,7 @@ from utils import format_time, seed_everything
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Main script for training the model.')
-    parser.add_argument('--config', type=str, default='leap.yaml', help='Path to the config file.')
+    parser.add_argument('--config', type=str, default='hyper.yaml', help='Path to the config file.')
     args = parser.parse_args()
 
     config = load_config(args.config)
