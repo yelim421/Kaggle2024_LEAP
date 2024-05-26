@@ -3,14 +3,31 @@ import torch.optim as optim
 from torchmetrics.regression import R2Score
 import time
 from utils import format_time
+import yaml
+import logging
 
-def train_model(model, train_loader, val_loader, criterion, optimizer, scheduler, device, epochs, patience, print_freq, num_outputs, start_time):
+def load_config(config_path):
+	with open(config_path, 'r') as f:
+		config = yaml.safe_load(f)
+	return config
+
+def setup_logging(log_file):
+	logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s', handlers=[
+		logging.FileHandler(log_file, mode = 'a'),
+		logging.StreamHandler()
+	])
+
+def train_model(config_path):
+	config = laod_config(config_path)
+	setup_logging('training.log')
+	logging.info(f"Hyperparameters : {config}")
+
     best_val_loss = float('inf')
     best_model_state = None
-    patience_count = 0
+    patience_count = config['patience_count']
     r2score = R2Score(num_outputs=num_outputs).to(device)
 
-    for epoch in range(epochs):
+    for epoch in range(config['epochs']):
         model.train()
         total_loss = 0
         steps = 0
@@ -50,6 +67,7 @@ def train_model(model, train_loader, val_loader, criterion, optimizer, scheduler
         r2 = r2score(all_outputs, y_true)
         avg_val_loss = val_loss / len(val_loader)
         print(f'\nEpoch: {epoch+1}  Val Loss: {avg_val_loss:.4f}  R2 score: {r2:.4f}')
+		logging.info(f"Epoch {epoch+1} Val Loss: {avg_val_loss:.4f} R2 score: {r2:4f}")
         
         scheduler.step(avg_val_loss)
 

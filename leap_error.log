@@ -10,4 +10,4 @@ Also make sure that all modulefiles written in TCL start with the string
 
 
 
-/var/spool/slurm/d/job311436/slurm_script: line 15: source: /home01/x2817a03/.conda/envs/leap: is a directory
+2024-05-26 20:05:38,562 - Hyperparameters : {'DATA_PATH': '/scratch/x2817a02/workspace/kaggle/ClimSim/data/', 'BATCH_SIZE': 1024, 'MIN_STD': '1e-8', 'SCHEDULER_PATIENCE': 3, 'SCHEDULER_FACTOR': 0.316, 'EPOCHS': 2, 'PATIENCE': 1, 'PRINT_FREQ': 100, 'BEST_MODEL_PATH': 'best_model.pth', 'LEARNING_RATE': 0.001, 'WEIGHT_DECAY': 0.01}

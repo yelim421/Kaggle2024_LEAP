@@ -1,9 +1,56 @@
 ==========================================
-SLURM_JOB_ID = 311436
-SLURM_NODELIST = gpu25
+SLURM_JOB_ID = 313935
+SLURM_NODELIST = gpu11
 ==========================================
-Time after processing data: 0:01:21
+Time after processing data: 0:01:34
 Using device: cpu
-Loaded existing model from best_model.pth
-Total time after loading model: 0:01:21
-Total time after prediction: 0:07:02
+  Epoch: 1   Batch: 100/2198   Train Loss: 0.8012   LR: 1.0e-03   Time: 0:01:46
+  Epoch: 1   Batch: 200/2198   Train Loss: 0.6294   LR: 1.0e-03   Time: 0:01:55
+  Epoch: 1   Batch: 300/2198   Train Loss: 0.5755   LR: 1.0e-03   Time: 0:02:02
+  Epoch: 1   Batch: 400/2198   Train Loss: 0.5495   LR: 1.0e-03   Time: 0:02:09
+  Epoch: 1   Batch: 500/2198   Train Loss: 0.5283   LR: 1.0e-03   Time: 0:02:15
+  Epoch: 1   Batch: 600/2198   Train Loss: 0.5181   LR: 1.0e-03   Time: 0:02:21
+  Epoch: 1   Batch: 700/2198   Train Loss: 0.5079   LR: 1.0e-03   Time: 0:02:27
+  Epoch: 1   Batch: 800/2198   Train Loss: 0.5165   LR: 1.0e-03   Time: 0:02:32
+  Epoch: 1   Batch: 900/2198   Train Loss: 0.5775   LR: 1.0e-03   Time: 0:02:39
+  Epoch: 1   Batch: 1000/2198   Train Loss: 0.5564   LR: 1.0e-03   Time: 0:02:44
+  Epoch: 1   Batch: 1100/2198   Train Loss: 0.4972   LR: 1.0e-03   Time: 0:02:50
+  Epoch: 1   Batch: 1200/2198   Train Loss: 0.4905   LR: 1.0e-03   Time: 0:02:56
+  Epoch: 1   Batch: 1300/2198   Train Loss: 0.5258   LR: 1.0e-03   Time: 0:03:02
+  Epoch: 1   Batch: 1400/2198   Train Loss: 0.4882   LR: 1.0e-03   Time: 0:03:08
+  Epoch: 1   Batch: 1500/2198   Train Loss: 0.4792   LR: 1.0e-03   Time: 0:03:14
+  Epoch: 1   Batch: 1600/2198   Train Loss: 0.4713   LR: 1.0e-03   Time: 0:03:20
+  Epoch: 1   Batch: 1700/2198   Train Loss: 0.4771   LR: 1.0e-03   Time: 0:03:26
+  Epoch: 1   Batch: 1800/2198   Train Loss: 0.4981   LR: 1.0e-03   Time: 0:03:32
+  Epoch: 1   Batch: 1900/2198   Train Loss: 0.4710   LR: 1.0e-03   Time: 0:03:38
+  Epoch: 1   Batch: 2000/2198   Train Loss: 0.4906   LR: 1.0e-03   Time: 0:03:43
+  Epoch: 1   Batch: 2100/2198   Train Loss: 0.4683   LR: 1.0e-03   Time: 0:03:49
+
+Epoch: 1  Val Loss: 0.5009  R2 score: -25.5122
+Validation loss decreased, saving new best model and resetting patience counter.
+  Epoch: 2   Batch: 100/2198   Train Loss: 0.4550   LR: 1.0e-03   Time: 0:04:13
+  Epoch: 2   Batch: 200/2198   Train Loss: 0.4629   LR: 1.0e-03   Time: 0:04:19
+  Epoch: 2   Batch: 300/2198   Train Loss: 0.4776   LR: 1.0e-03   Time: 0:04:25
+  Epoch: 2   Batch: 400/2198   Train Loss: 0.4498   LR: 1.0e-03   Time: 0:04:32
+  Epoch: 2   Batch: 500/2198   Train Loss: 0.4825   LR: 1.0e-03   Time: 0:04:38
+  Epoch: 2   Batch: 600/2198   Train Loss: 0.5152   LR: 1.0e-03   Time: 0:04:43
+  Epoch: 2   Batch: 700/2198   Train Loss: 0.4872   LR: 1.0e-03   Time: 0:04:50
+  Epoch: 2   Batch: 800/2198   Train Loss: 0.5334   LR: 1.0e-03   Time: 0:04:56
+  Epoch: 2   Batch: 900/2198   Train Loss: 0.4737   LR: 1.0e-03   Time: 0:05:02
+  Epoch: 2   Batch: 1000/2198   Train Loss: 0.4500   LR: 1.0e-03   Time: 0:05:08
+  Epoch: 2   Batch: 1100/2198   Train Loss: 0.4533   LR: 1.0e-03   Time: 0:05:14
+  Epoch: 2   Batch: 1200/2198   Train Loss: 0.4916   LR: 1.0e-03   Time: 0:05:20
+  Epoch: 2   Batch: 1300/2198   Train Loss: 0.4533   LR: 1.0e-03   Time: 0:05:26
+  Epoch: 2   Batch: 1400/2198   Train Loss: 0.4430   LR: 1.0e-03   Time: 0:05:32
+  Epoch: 2   Batch: 1500/2198   Train Loss: 0.4554   LR: 1.0e-03   Time: 0:05:38
+  Epoch: 2   Batch: 1600/2198   Train Loss: 0.4389   LR: 1.0e-03   Time: 0:05:44
+  Epoch: 2   Batch: 1700/2198   Train Loss: 0.4437   LR: 1.0e-03   Time: 0:05:50
+  Epoch: 2   Batch: 1800/2198   Train Loss: 0.4346   LR: 1.0e-03   Time: 0:05:56
+  Epoch: 2   Batch: 1900/2198   Train Loss: 0.4442   LR: 1.0e-03   Time: 0:06:03
+  Epoch: 2   Batch: 2000/2198   Train Loss: 0.4806   LR: 1.0e-03   Time: 0:06:09
+  Epoch: 2   Batch: 2100/2198   Train Loss: 0.4332   LR: 1.0e-03   Time: 0:06:15
+
+Epoch: 2  Val Loss: 0.4741  R2 score: -5.2721
+Validation loss decreased, saving new best model and resetting patience counter.
+Saved best model to best_model.pth
+Total time after training or loading: 0:06:32
