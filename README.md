@@ -28,7 +28,7 @@ for KISTI.NEURON users:
 	more details for job script file [check here](https://docs-ksc.gitbook.io/neuron-user-guide/undefined/running-jobs-through-scheduler-slurm#id-6)   
 	
 BEFORE RUN:    
-- please check **data_path**
+- please check **data_path** in `hyper.yaml` and `data_processing.py` files.
 
 SUBMIT:
 `kaggle competitions submit -c leap-atmospheric-physics-ai-climsim -f submission.csv -m "Message"`
