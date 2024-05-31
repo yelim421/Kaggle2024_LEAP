@@ -3,7 +3,7 @@ import pandas as pd
 import polars as pl
 import numpy as np
 
-DATA_PATH = "/scratch/x2817a02/workspace/kaggle/ClimSim/data/"
+DATA_PATH = "/data01/jhko/LEAP/" #"/scratch/x2817a02/workspace/kaggle/ClimSim/data/"
 MIN_STD = 1e-8
 
 def read_and_preprocess_data():

@@ -17,3 +17,99 @@ Epoch: 1  Val Loss: 0.5009  R2 score: -25.5122
 2024-05-26 20:33:31,631 - 
 Epoch: 2  Val Loss: 0.4741  R2 score: -5.2721
 2024-05-26 20:33:31,632 - Validation loss decreased, saving new best model and resetting patience counter.
+2024-05-30 21:27:21,113 - Hyperparameters :
+2024-05-30 21:27:21,122 - DATA_PATH: /data01/jhko/LEAP/
+2024-05-30 21:27:21,122 - BATCH_SIZE: 1024
+2024-05-30 21:27:21,122 - MIN_STD: 1e-8
+2024-05-30 21:27:21,122 - SCHEDULER_PATIENCE: 3
+2024-05-30 21:27:21,122 - SCHEDULER_FACTOR: 0.316
+2024-05-30 21:27:21,122 - EPOCHS: 2
+2024-05-30 21:27:21,122 - PATIENCE: 1
+2024-05-30 21:27:21,122 - PRINT_FREQ: 100
+2024-05-30 21:27:21,122 - BEST_MODEL_PATH: best_model.pth
+2024-05-30 21:27:21,122 - LEARNING_RATE: 0.001
+2024-05-30 21:27:21,122 - WEIGHT_DECAY: 0.01
+2024-05-30 21:51:11,093 - Hyperparameters :
+2024-05-30 21:51:11,094 - DATA_PATH: /data01/jhko/LEAP/
+2024-05-30 21:51:11,094 - BATCH_SIZE: 1024
+2024-05-30 21:51:11,094 - MIN_STD: 1e-8
+2024-05-30 21:51:11,094 - SCHEDULER_PATIENCE: 3
+2024-05-30 21:51:11,094 - SCHEDULER_FACTOR: 0.316
+2024-05-30 21:51:11,094 - EPOCHS: 2
+2024-05-30 21:51:11,094 - PATIENCE: 1
+2024-05-30 21:51:11,094 - PRINT_FREQ: 100
+2024-05-30 21:51:11,094 - BEST_MODEL_PATH: best_model.pth
+2024-05-30 21:51:11,094 - LEARNING_RATE: 0.001
+2024-05-30 21:51:11,094 - WEIGHT_DECAY: 0.01
+2024-05-30 21:53:48,536 - Hyperparameters :
+2024-05-30 21:53:48,536 - DATA_PATH: /data01/jhko/LEAP/
+2024-05-30 21:53:48,536 - BATCH_SIZE: 1024
+2024-05-30 21:53:48,536 - MIN_STD: 1e-8
+2024-05-30 21:53:48,536 - SCHEDULER_PATIENCE: 3
+2024-05-30 21:53:48,536 - SCHEDULER_FACTOR: 0.316
+2024-05-30 21:53:48,536 - EPOCHS: 2
+2024-05-30 21:53:48,536 - PATIENCE: 1
+2024-05-30 21:53:48,536 - PRINT_FREQ: 100
+2024-05-30 21:53:48,536 - BEST_MODEL_PATH: best_model.pth
+2024-05-30 21:53:48,536 - LEARNING_RATE: 0.001
+2024-05-30 21:53:48,536 - WEIGHT_DECAY: 0.01
+2024-05-30 22:00:12,881 - Hyperparameters :
+2024-05-30 22:00:12,898 - DATA_PATH: /data01/jhko/LEAP/
+2024-05-30 22:00:12,898 - BATCH_SIZE: 1024
+2024-05-30 22:00:12,898 - MIN_STD: 1e-8
+2024-05-30 22:00:12,898 - SCHEDULER_PATIENCE: 3
+2024-05-30 22:00:12,898 - SCHEDULER_FACTOR: 0.316
+2024-05-30 22:00:12,899 - EPOCHS: 2
+2024-05-30 22:00:12,899 - PATIENCE: 1
+2024-05-30 22:00:12,899 - PRINT_FREQ: 100
+2024-05-30 22:00:12,899 - BEST_MODEL_PATH: best_model.pth
+2024-05-30 22:00:12,899 - LEARNING_RATE: 0.001
+2024-05-30 22:00:12,899 - WEIGHT_DECAY: 0.01
+2024-05-30 22:00:34,663 - Epoch: 1  Batch: 100/2198  Train Loss: 0.9438  LR: 1.0e-03  Time: 0:01:42
+2024-05-30 22:00:54,832 - Epoch: 1  Batch: 200/2198  Train Loss: 0.8216  LR: 1.0e-03  Time: 0:02:02
+2024-05-30 22:01:12,332 - Epoch: 1  Batch: 300/2198  Train Loss: 0.7833  LR: 1.0e-03  Time: 0:02:20
+2024-05-30 22:01:29,778 - Epoch: 1  Batch: 400/2198  Train Loss: 0.7607  LR: 1.0e-03  Time: 0:02:37
+2024-05-30 22:01:47,379 - Epoch: 1  Batch: 500/2198  Train Loss: 0.7462  LR: 1.0e-03  Time: 0:02:55
+2024-05-30 22:02:04,998 - Epoch: 1  Batch: 600/2198  Train Loss: 0.7362  LR: 1.0e-03  Time: 0:03:12
+2024-05-30 22:02:21,572 - Epoch: 1  Batch: 700/2198  Train Loss: 0.7289  LR: 1.0e-03  Time: 0:03:29
+2024-05-30 22:02:38,442 - Epoch: 1  Batch: 800/2198  Train Loss: 0.7223  LR: 1.0e-03  Time: 0:03:46
+2024-05-30 22:02:54,868 - Epoch: 1  Batch: 900/2198  Train Loss: 0.7177  LR: 1.0e-03  Time: 0:04:02
+2024-05-30 22:03:12,411 - Epoch: 1  Batch: 1000/2198  Train Loss: 0.7138  LR: 1.0e-03  Time: 0:04:20
+2024-05-30 22:03:29,767 - Epoch: 1  Batch: 1100/2198  Train Loss: 0.7101  LR: 1.0e-03  Time: 0:04:37
+2024-05-30 22:03:46,576 - Epoch: 1  Batch: 1200/2198  Train Loss: 0.7066  LR: 1.0e-03  Time: 0:04:54
+2024-05-30 22:04:03,907 - Epoch: 1  Batch: 1300/2198  Train Loss: 0.7036  LR: 1.0e-03  Time: 0:05:11
+2024-05-30 22:04:21,684 - Epoch: 1  Batch: 1400/2198  Train Loss: 0.7015  LR: 1.0e-03  Time: 0:05:29
+2024-05-30 22:04:39,335 - Epoch: 1  Batch: 1500/2198  Train Loss: 0.6981  LR: 1.0e-03  Time: 0:05:47
+2024-05-30 22:04:56,682 - Epoch: 1  Batch: 1600/2198  Train Loss: 0.6977  LR: 1.0e-03  Time: 0:06:04
+2024-05-30 22:05:14,279 - Epoch: 1  Batch: 1700/2198  Train Loss: 0.6944  LR: 1.0e-03  Time: 0:06:22
+2024-05-30 22:05:31,498 - Epoch: 1  Batch: 1800/2198  Train Loss: 0.6926  LR: 1.0e-03  Time: 0:06:39
+2024-05-30 22:05:49,189 - Epoch: 1  Batch: 1900/2198  Train Loss: 0.6885  LR: 1.0e-03  Time: 0:06:57
+2024-05-30 22:06:07,126 - Epoch: 1  Batch: 2000/2198  Train Loss: 0.6882  LR: 1.0e-03  Time: 0:07:14
+2024-05-30 22:06:24,694 - Epoch: 1  Batch: 2100/2198  Train Loss: 0.6857  LR: 1.0e-03  Time: 0:07:32
+2024-05-30 22:07:25,257 - 
+Epoch: 1  Val Loss: 0.6697  R2 score: -12.0860
+2024-05-30 22:07:25,257 - Validation loss decreased, saving new best model and resetting patience counter.
+2024-05-30 22:07:43,739 - Epoch: 2  Batch: 100/2198  Train Loss: 0.6823  LR: 1.0e-03  Time: 0:08:51
+2024-05-30 22:08:02,260 - Epoch: 2  Batch: 200/2198  Train Loss: 0.6817  LR: 1.0e-03  Time: 0:09:10
+2024-05-30 22:08:20,226 - Epoch: 2  Batch: 300/2198  Train Loss: 0.6806  LR: 1.0e-03  Time: 0:09:28
+2024-05-30 22:08:37,032 - Epoch: 2  Batch: 400/2198  Train Loss: 0.6784  LR: 1.0e-03  Time: 0:09:44
+2024-05-30 22:08:54,560 - Epoch: 2  Batch: 500/2198  Train Loss: 0.6781  LR: 1.0e-03  Time: 0:10:02
+2024-05-30 22:09:11,680 - Epoch: 2  Batch: 600/2198  Train Loss: 0.6757  LR: 1.0e-03  Time: 0:10:19
+2024-05-30 22:09:29,323 - Epoch: 2  Batch: 700/2198  Train Loss: 0.6765  LR: 1.0e-03  Time: 0:10:37
+2024-05-30 22:09:46,194 - Epoch: 2  Batch: 800/2198  Train Loss: 0.6736  LR: 1.0e-03  Time: 0:10:54
+2024-05-30 22:10:04,336 - Epoch: 2  Batch: 900/2198  Train Loss: 0.6735  LR: 1.0e-03  Time: 0:11:12
+2024-05-30 22:10:22,072 - Epoch: 2  Batch: 1000/2198  Train Loss: 0.6725  LR: 1.0e-03  Time: 0:11:29
+2024-05-30 22:10:39,166 - Epoch: 2  Batch: 1100/2198  Train Loss: 0.6715  LR: 1.0e-03  Time: 0:11:46
+2024-05-30 22:10:57,087 - Epoch: 2  Batch: 1200/2198  Train Loss: 0.6692  LR: 1.0e-03  Time: 0:12:04
+2024-05-30 22:11:15,615 - Epoch: 2  Batch: 1300/2198  Train Loss: 0.6700  LR: 1.0e-03  Time: 0:12:23
+2024-05-30 22:11:32,743 - Epoch: 2  Batch: 1400/2198  Train Loss: 0.6684  LR: 1.0e-03  Time: 0:12:40
+2024-05-30 22:11:54,076 - Epoch: 2  Batch: 1500/2198  Train Loss: 0.6676  LR: 1.0e-03  Time: 0:13:01
+2024-05-30 22:12:11,249 - Epoch: 2  Batch: 1600/2198  Train Loss: 0.6666  LR: 1.0e-03  Time: 0:13:19
+2024-05-30 22:12:31,989 - Epoch: 2  Batch: 1700/2198  Train Loss: 0.6660  LR: 1.0e-03  Time: 0:13:39
+2024-05-30 22:12:48,333 - Epoch: 2  Batch: 1800/2198  Train Loss: 0.6658  LR: 1.0e-03  Time: 0:13:56
+2024-05-30 22:13:05,991 - Epoch: 2  Batch: 1900/2198  Train Loss: 0.6656  LR: 1.0e-03  Time: 0:14:13
+2024-05-30 22:13:22,862 - Epoch: 2  Batch: 2000/2198  Train Loss: 0.6641  LR: 1.0e-03  Time: 0:14:30
+2024-05-30 22:13:40,588 - Epoch: 2  Batch: 2100/2198  Train Loss: 0.6633  LR: 1.0e-03  Time: 0:14:48
+2024-05-30 22:14:37,658 - 
+Epoch: 2  Val Loss: 0.6474  R2 score: 0.2119
+2024-05-30 22:14:37,659 - Validation loss decreased, saving new best model and resetting patience counter.

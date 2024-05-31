@@ -9,8 +9,9 @@ import numpy as np
 from data_processing import read_and_preprocess_data, normalize_data
 from dataset import NumpyDataset
 from model import FFNN
-from train_new import train_model, load_config, setup_logging
+from train import train_model, load_config, setup_logging
 from utils import format_time, seed_everything
+from loss import LpLoss
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Main script for training the model.')
@@ -47,7 +48,7 @@ if __name__ == "__main__":
         train_loader = DataLoader(train_dataset, batch_size=config['BATCH_SIZE'], shuffle=True)
         val_loader = DataLoader(val_dataset, batch_size=config['BATCH_SIZE'], shuffle=False)
 
-        criterion = nn.MSELoss()
+        criterion = LpLoss() #nn.MSELoss() #예림
         optimizer = optim.AdamW(model.parameters(), lr=config['LEARNING_RATE'], weight_decay=config['WEIGHT_DECAY'])
         scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=config['SCHEDULER_FACTOR'], patience=config['SCHEDULER_PATIENCE'])
 

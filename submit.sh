@@ -10,7 +10,7 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --exclusive
 
-module load python/3.12.3
+#module load python/3.12.3
 
 #source /home01/x2817a03/.conda/envs/leap/bin/activate
 
