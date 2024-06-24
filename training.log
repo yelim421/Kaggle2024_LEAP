@@ -2295,3 +2295,125 @@ Epoch: 10  Val Loss: 0.5409  R2 score: 0.3963
 2024-06-24 17:20:13,081 - MODEL_PATH: best_model.pth
 2024-06-24 17:20:13,082 - LEARNING_RATE: 0.001
 2024-06-24 17:20:13,082 - WEIGHT_DECAY: 0.01
+2024-06-24 19:07:48,324 - -----------------------------------------------------------------------------
+2024-06-24 19:07:48,324 - Hyperparameters:
+2024-06-24 19:07:48,324 - BATCH_SIZE: 1024
+2024-06-24 19:07:48,325 - MIN_STD: 1e-8
+2024-06-24 19:07:48,325 - SCHEDULER_PATIENCE: 3
+2024-06-24 19:07:48,325 - SCHEDULER_FACTOR: 0.316
+2024-06-24 19:07:48,326 - EPOCHS: 10
+2024-06-24 19:07:48,326 - PATIENCE: 6
+2024-06-24 19:07:48,326 - PRINT_FREQ: 50
+2024-06-24 19:07:48,327 - MODEL_PATH: FFNN_100.pth
+2024-06-24 19:07:48,327 - LEARNING_RATE: 0.001
+2024-06-24 19:07:48,327 - WEIGHT_DECAY: 0.01
+2024-06-24 19:08:40,849 - ('  Epoch: 1', '  Batch: 50/2198', '  Train Loss: 1.1479', '  LR: 1.0e-03', '  Time: 0:00:53')
+2024-06-24 19:08:44,538 - ('  Epoch: 1', '  Batch: 100/2198', '  Train Loss: 0.9956', '  LR: 1.0e-03', '  Time: 0:00:56')
+2024-06-24 19:08:48,312 - ('  Epoch: 1', '  Batch: 150/2198', '  Train Loss: 0.8866', '  LR: 1.0e-03', '  Time: 0:01:00')
+2024-06-24 19:08:52,103 - ('  Epoch: 1', '  Batch: 200/2198', '  Train Loss: 0.8625', '  LR: 1.0e-03', '  Time: 0:01:04')
+2024-06-24 19:08:55,919 - ('  Epoch: 1', '  Batch: 250/2198', '  Train Loss: 0.8284', '  LR: 1.0e-03', '  Time: 0:01:08')
+2024-06-24 19:08:59,701 - ('  Epoch: 1', '  Batch: 300/2198', '  Train Loss: 0.8058', '  LR: 1.0e-03', '  Time: 0:01:11')
+2024-06-24 19:09:03,501 - ('  Epoch: 1', '  Batch: 350/2198', '  Train Loss: 0.7851', '  LR: 1.0e-03', '  Time: 0:01:15')
+2024-06-24 19:09:07,197 - ('  Epoch: 1', '  Batch: 400/2198', '  Train Loss: 0.7730', '  LR: 1.0e-03', '  Time: 0:01:19')
+2024-06-24 19:09:10,977 - ('  Epoch: 1', '  Batch: 450/2198', '  Train Loss: 0.7608', '  LR: 1.0e-03', '  Time: 0:01:23')
+2024-06-24 19:09:14,756 - ('  Epoch: 1', '  Batch: 500/2198', '  Train Loss: 0.7540', '  LR: 1.0e-03', '  Time: 0:01:26')
+2024-06-24 19:09:18,576 - ('  Epoch: 1', '  Batch: 550/2198', '  Train Loss: 0.7450', '  LR: 1.0e-03', '  Time: 0:01:30')
+2024-06-24 19:09:22,257 - ('  Epoch: 1', '  Batch: 600/2198', '  Train Loss: 0.7393', '  LR: 1.0e-03', '  Time: 0:01:34')
+2024-06-24 19:09:26,091 - ('  Epoch: 1', '  Batch: 650/2198', '  Train Loss: 0.7295', '  LR: 1.0e-03', '  Time: 0:01:38')
+2024-06-24 19:09:29,909 - ('  Epoch: 1', '  Batch: 700/2198', '  Train Loss: 0.7215', '  LR: 1.0e-03', '  Time: 0:01:42')
+2024-06-24 19:09:33,627 - ('  Epoch: 1', '  Batch: 750/2198', '  Train Loss: 0.7157', '  LR: 1.0e-03', '  Time: 0:01:45')
+2024-06-24 19:09:37,406 - ('  Epoch: 1', '  Batch: 800/2198', '  Train Loss: 0.7101', '  LR: 1.0e-03', '  Time: 0:01:49')
+2024-06-24 19:09:41,087 - ('  Epoch: 1', '  Batch: 850/2198', '  Train Loss: 0.7049', '  LR: 1.0e-03', '  Time: 0:01:53')
+2024-06-24 19:09:44,967 - ('  Epoch: 1', '  Batch: 900/2198', '  Train Loss: 0.7007', '  LR: 1.0e-03', '  Time: 0:01:57')
+2024-06-24 19:09:48,641 - ('  Epoch: 1', '  Batch: 950/2198', '  Train Loss: 0.6951', '  LR: 1.0e-03', '  Time: 0:02:00')
+2024-06-24 19:09:52,452 - ('  Epoch: 1', '  Batch: 1000/2198', '  Train Loss: 0.6923', '  LR: 1.0e-03', '  Time: 0:02:04')
+2024-06-24 19:09:56,129 - ('  Epoch: 1', '  Batch: 1050/2198', '  Train Loss: 0.6869', '  LR: 1.0e-03', '  Time: 0:02:08')
+2024-06-24 19:09:59,901 - ('  Epoch: 1', '  Batch: 1100/2198', '  Train Loss: 0.6843', '  LR: 1.0e-03', '  Time: 0:02:12')
+2024-06-24 19:10:03,580 - ('  Epoch: 1', '  Batch: 1150/2198', '  Train Loss: 0.6811', '  LR: 1.0e-03', '  Time: 0:02:15')
+2024-06-24 19:10:07,457 - ('  Epoch: 1', '  Batch: 1200/2198', '  Train Loss: 0.6790', '  LR: 1.0e-03', '  Time: 0:02:19')
+2024-06-24 19:10:11,133 - ('  Epoch: 1', '  Batch: 1250/2198', '  Train Loss: 0.6741', '  LR: 1.0e-03', '  Time: 0:02:23')
+2024-06-24 19:10:14,944 - ('  Epoch: 1', '  Batch: 1300/2198', '  Train Loss: 0.6739', '  LR: 1.0e-03', '  Time: 0:02:27')
+2024-06-24 19:10:18,612 - ('  Epoch: 1', '  Batch: 1350/2198', '  Train Loss: 0.6701', '  LR: 1.0e-03', '  Time: 0:02:30')
+2024-06-24 19:10:22,376 - ('  Epoch: 1', '  Batch: 1400/2198', '  Train Loss: 0.6696', '  LR: 1.0e-03', '  Time: 0:02:34')
+2024-06-24 19:10:26,042 - ('  Epoch: 1', '  Batch: 1450/2198', '  Train Loss: 0.6664', '  LR: 1.0e-03', '  Time: 0:02:38')
+2024-06-24 19:10:29,852 - ('  Epoch: 1', '  Batch: 1500/2198', '  Train Loss: 0.6656', '  LR: 1.0e-03', '  Time: 0:02:42')
+2024-06-24 19:10:33,576 - ('  Epoch: 1', '  Batch: 1550/2198', '  Train Loss: 0.6616', '  LR: 1.0e-03', '  Time: 0:02:45')
+2024-06-24 19:10:37,330 - ('  Epoch: 1', '  Batch: 1600/2198', '  Train Loss: 0.6611', '  LR: 1.0e-03', '  Time: 0:02:49')
+2024-06-24 19:10:41,028 - ('  Epoch: 1', '  Batch: 1650/2198', '  Train Loss: 0.6608', '  LR: 1.0e-03', '  Time: 0:02:53')
+2024-06-24 19:11:13,823 - -----------------------------------------------------------------------------
+2024-06-24 19:11:13,824 - Hyperparameters:
+2024-06-24 19:11:13,824 - BATCH_SIZE: 1024
+2024-06-24 19:11:13,825 - MIN_STD: 1e-8
+2024-06-24 19:11:13,825 - SCHEDULER_PATIENCE: 3
+2024-06-24 19:11:13,826 - SCHEDULER_FACTOR: 0.316
+2024-06-24 19:11:13,826 - EPOCHS: 10
+2024-06-24 19:11:13,826 - PATIENCE: 6
+2024-06-24 19:11:13,827 - PRINT_FREQ: 2100
+2024-06-24 19:11:13,827 - MODEL_PATH: FFNN_100.pth
+2024-06-24 19:11:13,827 - LEARNING_RATE: 0.001
+2024-06-24 19:11:13,828 - WEIGHT_DECAY: 0.01
+2024-06-24 19:15:06,765 - ('  Epoch: 1', '  Batch: 2100/2198', '  Train Loss: 0.7227', '  LR: 1.0e-03', '  Time: 0:03:53')
+2024-06-24 19:15:36,179 - 
+Epoch: 1  Val Loss: 0.6335  R2 score: 0.2891
+2024-06-24 19:15:36,181 - Validation loss decreased, saving new best model and resetting patience counter.
+2024-06-24 19:18:35,848 - ('  Epoch: 2', '  Batch: 2100/2198', '  Train Loss: 0.6275', '  LR: 1.0e-03', '  Time: 0:07:22')
+2024-06-24 19:19:00,037 - 
+Epoch: 2  Val Loss: 0.6028  R2 score: 0.3273
+2024-06-24 19:19:00,039 - Validation loss decreased, saving new best model and resetting patience counter.
+2024-06-24 19:21:36,195 - ('  Epoch: 3', '  Batch: 2100/2198', '  Train Loss: 0.6061', '  LR: 1.0e-03', '  Time: 0:10:22')
+2024-06-24 19:22:00,006 - 
+Epoch: 3  Val Loss: 0.5866  R2 score: 0.3481
+2024-06-24 19:22:00,008 - Validation loss decreased, saving new best model and resetting patience counter.
+2024-06-24 19:24:55,795 - ('  Epoch: 4', '  Batch: 2100/2198', '  Train Loss: 0.5931', '  LR: 1.0e-03', '  Time: 0:13:42')
+2024-06-24 19:25:21,358 - 
+Epoch: 4  Val Loss: 0.5759  R2 score: 0.3592
+2024-06-24 19:25:21,360 - Validation loss decreased, saving new best model and resetting patience counter.
+2024-06-24 19:28:10,398 - ('  Epoch: 5', '  Batch: 2100/2198', '  Train Loss: 0.5836', '  LR: 1.0e-03', '  Time: 0:16:57')
+2024-06-24 19:28:34,256 - 
+Epoch: 5  Val Loss: 0.5667  R2 score: 0.3687
+2024-06-24 19:28:34,257 - Validation loss decreased, saving new best model and resetting patience counter.
+2024-06-24 19:31:17,386 - ('  Epoch: 6', '  Batch: 2100/2198', '  Train Loss: 0.5760', '  LR: 1.0e-03', '  Time: 0:20:04')
+2024-06-24 19:31:46,085 - 
+Epoch: 6  Val Loss: 0.5589  R2 score: 0.3789
+2024-06-24 19:31:46,086 - Validation loss decreased, saving new best model and resetting patience counter.
+2024-06-24 19:34:35,148 - ('  Epoch: 7', '  Batch: 2100/2198', '  Train Loss: 0.5698', '  LR: 1.0e-03', '  Time: 0:23:21')
+2024-06-24 19:34:58,916 - 
+Epoch: 7  Val Loss: 0.5529  R2 score: 0.3851
+2024-06-24 19:34:58,917 - Validation loss decreased, saving new best model and resetting patience counter.
+2024-06-24 19:37:35,091 - ('  Epoch: 8', '  Batch: 2100/2198', '  Train Loss: 0.5645', '  LR: 1.0e-03', '  Time: 0:26:21')
+2024-06-24 19:37:58,800 - 
+Epoch: 8  Val Loss: 0.5493  R2 score: 0.3867
+2024-06-24 19:37:58,801 - Validation loss decreased, saving new best model and resetting patience counter.
+2024-06-24 19:40:35,015 - ('  Epoch: 9', '  Batch: 2100/2198', '  Train Loss: 0.5602', '  LR: 1.0e-03', '  Time: 0:29:21')
+2024-06-24 19:40:58,872 - 
+Epoch: 9  Val Loss: 0.5442  R2 score: 0.3949
+2024-06-24 19:40:58,873 - Validation loss decreased, saving new best model and resetting patience counter.
+2024-06-24 19:43:34,946 - ('  Epoch: 10', '  Batch: 2100/2198', '  Train Loss: 0.5566', '  LR: 1.0e-03', '  Time: 0:32:21')
+2024-06-24 19:43:58,956 - 
+Epoch: 10  Val Loss: 0.5409  R2 score: 0.3963
+2024-06-24 19:43:58,958 - Validation loss decreased, saving new best model and resetting patience counter.
+2024-06-24 19:43:59,191 - Model checkpoint saved as FFNN_100.pth.
+2024-06-24 20:57:57,387 - -----------------------------------------------------------------------------
+2024-06-24 20:57:57,387 - Hyperparameters:
+2024-06-24 20:57:57,388 - BATCH_SIZE: 1024
+2024-06-24 20:57:57,388 - MIN_STD: 1e-8
+2024-06-24 20:57:57,389 - SCHEDULER_PATIENCE: 3
+2024-06-24 20:57:57,389 - SCHEDULER_FACTOR: 0.316
+2024-06-24 20:57:57,390 - EPOCHS: 100
+2024-06-24 20:57:57,390 - PATIENCE: 6
+2024-06-24 20:57:57,391 - PRINT_FREQ: 2100
+2024-06-24 20:57:57,391 - MODEL_PATH: FFNN_100.pth
+2024-06-24 20:57:57,391 - LEARNING_RATE: 0.001
+2024-06-24 20:57:57,392 - WEIGHT_DECAY: 0.01
+2024-06-24 21:02:06,369 - -----------------------------------------------------------------------------
+2024-06-24 21:02:06,369 - Hyperparameters:
+2024-06-24 21:02:06,369 - BATCH_SIZE: 1024
+2024-06-24 21:02:06,370 - MIN_STD: 1e-8
+2024-06-24 21:02:06,370 - SCHEDULER_PATIENCE: 3
+2024-06-24 21:02:06,370 - SCHEDULER_FACTOR: 0.316
+2024-06-24 21:02:06,371 - EPOCHS: 100
+2024-06-24 21:02:06,371 - PATIENCE: 6
+2024-06-24 21:02:06,372 - PRINT_FREQ: 2100
+2024-06-24 21:02:06,372 - MODEL_PATH: FFNN_100.pth
+2024-06-24 21:02:06,372 - LEARNING_RATE: 0.001
+2024-06-24 21:02:06,373 - WEIGHT_DECAY: 0.01
