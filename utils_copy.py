@@ -46,8 +46,8 @@ def activate_kaggle_user(user):
 
     user_info = users[user]
 
-    with open('/home/jhko/LEAP_ClimSim/kaggle.json', 'w') as f:
+    with open('/home/jhko/.kaggle/kaggle.json', 'w') as f:
         json.dump(user_info, f)
 
-    os.chmod('/home/jhko/LEAP_ClimSim/kaggle.json', 0o600)
+    os.chmod('/home/jhko/.kaggle/kaggle.json', 0o600)
     print(f"Activated Kaggle user: {user}")
