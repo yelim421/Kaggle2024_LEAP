@@ -1,8 +1,0 @@
-==========================================
-SLURM_JOB_ID = 313943
-SLURM_NODELIST = gpu11
-==========================================
-Time after processing data: 0:01:22
-Using device: cpu
-Saved best model to best_model.pth
-Total time after training or loading: 0:06:43
